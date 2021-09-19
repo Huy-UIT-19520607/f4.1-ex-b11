@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bg-eee {
+    background-color: #eee;
+}
+
+.input-form {
+    padding: 40px;
+    background-color: darkorange;
+}
+
+.input-form .heading {
+    text-align: center;
+    color: #fff;
+}
+
+.input-form form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-form #input {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.input-form #add-btn {
+    width: 30%;
+    padding: 10px;
+    border: none;
+    color: #777;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.input-form #add-btn:hover {
+    /* opacity: 0.9; */
+    background-color: #ddd;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0px;
+}
+
+#todo-list .todo-item{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#todo-list .todo-item:hover {
+    /* opacity: 0.8; */
+    background-color: #ddd;
+}
+
+#todo-list i {
+    width: 40px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+#todo-list .close {
+    float: right;
+}
+
+#todo-list .close:hover {
+    background-color: red;
+}
+
+.check {
+    visibility: hidden;
+}
+
+.done {
+    background-color: #777;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* phải thêm #todo-list để ghì đè hover item*/
+#todo-list .done:hover {
+    background-color: #999;
+}
